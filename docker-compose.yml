@@ -8,7 +8,6 @@ services:
 
   node-app:
     build: .
-    image: tejsvapandey1/node-app 
     environment:  
       - PORT=3000
     depends_on:
