@@ -1,11 +1,11 @@
 services:
-  nginx:    
-  ports:
-    - "80:80"
+  nginx:
+    ports:
+      - "80:80"
 
   node-app:
     build: 
-      context: .   
+      context: .
     environment:
       - NODE_ENV=production
       - MONGO_USER=${MONGO_USER}
