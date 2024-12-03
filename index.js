@@ -57,11 +57,11 @@ app.use(session({ secret: "keyboard cat", cookie: { maxAge: 60000 } }));
 app.use("/api/v1/posts", postRouter);
 app.use("/api/v1/auth", authRouter);
 
-app.get("/api", (req, res) => {
+app.get("/api/v1", (req, res) => {
   res.send("Hello wasdforld");
 });
 
-app.listen(port, "0.0.0.0", () => {
+app.listen(port, () => {
   console.log("Server is running on port 3000");
 });
 
